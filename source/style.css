@@ -24,11 +24,41 @@ h2 {
 h3 {
   font-size: 24px;
   opacity: 0.7;
+  overflow: hidden;
+  border-right: 3px solid transparent;
+  margin: 0 auto;
+  white-space: nowrap;
+  letter-spacing: 2px;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end 5;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--primary-color);
+  }
 }
 
 .hero {
   background: var(--secondary-color);
   padding: 60px 100px 200px 150px;
+}
+
+.navigation-links a {
+  border-radius: 4px;
+  padding: 20px 25px;
+  text-decoration: none;
 }
 
 .about-link {
@@ -54,46 +84,10 @@ h3 {
   color: var(--primary-color);
 }
 
-.navigation-links a,
-.showcase-link {
-  border-radius: 4px;
-  padding: 20px 25px;
-  text-decoration: none;
-}
-
-.showcase-title {
-  text-align: left;
-}
-
-.showcase-text {
-  font-size: 18px;
-}
-
-.about-paragraph {
-  text-align: center;
-  font-size: 18px;
-  margin: 30px 10px;
-}
-
-.contact-section {
-  margin-top: 48px;
-}
-
-.email-link {
-  display: flex;
-  justify-content: center;
-  color: var(--primary-color);
-  font-size: 28px;
-  text-decoration: none;
-  transition: var(--transition);
-}
-
-.email-link:hover {
-  text-decoration: underline;
-  color: #5752b9;
-}
-
 @media (max-width: 1100px) {
+  .hero {
+    padding: 60px 0 200px 100px;
+  }
   .emoji-heindrikje {
     display: none;
   }
@@ -112,31 +106,34 @@ h3 {
   .navigation-links a {
     padding: 15px 15px;
   }
+  .hero {
+    padding: 60px 0 150px 100px;
+  }
 }
 
 @media (max-width: 750px) {
   .hero {
-    padding: 60px 80px;
+    padding: 60px 0 100px 80px;
   }
 }
 
 @media (max-width: 576px) {
+  h1,
+  h2,
+  h3,
+  .navigation-links {
+    text-align: center;
+  }
   h1 {
     font-size: 48px;
   }
   h2 {
     font-size: 28px;
   }
-  .contact-link {
-    display: none;
+  h3 {
+    font-size: 16px;
   }
-
-  .showcase-text {
-    text-align: center;
-  }
-  .showcase-link {
-    display: block;
-    text-align: center;
-    margin: 0 70px;
+  .hero {
+    padding: 60px 30px 100px 30px;
   }
 }
