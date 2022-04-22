@@ -61,14 +61,16 @@ h3 {
   text-decoration: none;
 }
 
-.about-link {
+.about-link,
+.work-link {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: var(--light-color);
   transition: var(--transition);
 }
 
-.about-link:hover {
+.about-link:hover,
+.work-link:hover {
   color: var(--light-color);
   opacity: 0.8;
 }
