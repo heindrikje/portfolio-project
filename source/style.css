@@ -55,6 +55,11 @@ h3 {
   padding: 60px 100px 200px 150px;
 }
 
+.hero-about {
+  background: var(--secondary-color);
+  padding: 60px 100px;
+}
+
 .navigation-links a {
   border-radius: 4px;
   padding: 20px 25px;
@@ -99,6 +104,26 @@ h3 {
 
 .welcome a:hover {
   text-decoration: underline;
+}
+
+.short-description {
+  font-size: 24px;
+  opacity: 0.7;
+  margin: 30px 0;
+}
+
+.learn-more {
+  color: black;
+  opacity: 0.7;
+}
+
+.learn-more:hover {
+  color: var(--primary-color);
+}
+
+.portrait {
+  max-width: 400px;
+  margin-left: 80px;
 }
 
 @media (max-width: 1100px) {

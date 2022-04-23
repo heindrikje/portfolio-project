@@ -21,6 +21,8 @@
       href="https://fonts.googleapis.com/css2?family=Graduate&family=Montserrat:wght@200;300;400;500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="/source/style.css" />
+    <title>About Me | Front-end Developer Heindrikje Kuhs</title>
     <script
       src="https://kit.fontawesome.com/9f24d62db8.js"
       crossorigin="anonymous"
@@ -31,8 +33,6 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="/source/style.css" />
-    <title>About Me | Front-end Developer Heindrikje Kuhs</title>
   </head>
   <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
@@ -69,24 +69,39 @@
         </div>
       </div>
     </nav>
-    <section class="hero">
+    <section class="hero-about">
       <div class="container">
         <div class="row">
           <div class="col-6">
             <h1>About.</h1>
-            <p>
+            <p class="short-description">
               I'm Heindrikje, a front-end developer, who lives in the Southwest
               of Germany.
             </p>
-            <a href="#">Learn more -></a>
+            <a href="#" class="learn-more">Learn more </a>
+            <i class="fa-solid fa-arrow-right-long"></i>
             <div class="navigation-links mt-5">
               <a href="#" class="work-link me-4">My work</a>
-              <a href="#" class="contact-link">Contact </a>
+              <a href="#" class="contact-link">Contact</a>
             </div>
           </div>
-          <div class="col-6"><img src="images/me.jpg" class="img-fluid" /></div>
+          <div class="col-6">
+            <img src="images/me.jpg" class="img-fluid portrait rounded" />
+          </div>
         </div>
       </div>
     </section>
+    <div class="container">
+      <div class="row">
+        <div class="col-3">That's me</div>
+        <div class="col-9">Lorem ipsum...</div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-3">Skills</div>
+        <div class="col-9">Lorem ipsum...</div>
+      </div>
+    </div>
   </body>
 </html>
