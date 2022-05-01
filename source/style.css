@@ -1,6 +1,6 @@
 :root {
   --primary-color: #112d4e;
-  --secondary-color: #dbe2ef;
+  --secondary-color: #d4e1f8;
   --highlight-color: #3f72af;
   --light-color: #f8f9fa;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -62,7 +62,7 @@ footer {
 }
 
 .navbar {
-  padding: 5px;
+  padding: 3px;
 }
 
 .logo-portfolio {
