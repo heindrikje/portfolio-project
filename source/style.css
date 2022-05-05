@@ -180,6 +180,46 @@ footer {
   color: var(--primary-color);
 }
 
+#thats-me {
+  scroll-margin-top: 90px;
+}
+
+.about-me-header {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Graduate", cursive;
+}
+
+.thats-me-paragraph {
+  text-align: justify;
+  line-height: 1.7;
+}
+
+.thats-me-paragraph::first-letter {
+  font-size: 2em;
+  line-height: 0;
+}
+
+.check-out-link {
+  text-decoration: none;
+  color: black;
+}
+
+.check-out-link:hover {
+  color: var(--highlight-color);
+}
+
+.skill-icon {
+  font-size: 60px;
+  color: var(--highlight-color);
+}
+
+.skill-name {
+  padding-top: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
 .connect-row {
   padding: 0 100px;
 }
