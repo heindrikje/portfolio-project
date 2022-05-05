@@ -294,6 +294,12 @@ footer {
     width: 250px;
     margin-left: 60px;
   }
+  .skill-icon {
+    font-size: 48px;
+  }
+  .skill-name {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 630px) {
@@ -333,6 +339,19 @@ footer {
   .portrait {
     width: 180px;
     margin-left: 45px;
+  }
+  .about-me-header {
+    font-size: 18px;
+  }
+  .thats-me-paragraph {
+    line-height: 1.5;
+    font-size: 14px;
+  }
+  .skill-icon {
+    font-size: 38px;
+  }
+  .skill-name {
+    font-size: 12px;
   }
   .linkedin,
   .github,
