@@ -150,7 +150,8 @@ footer {
   line-height: 2;
 }
 
-.welcome::first-letter {
+.welcome::first-letter,
+.thats-me-paragraph::first-letter {
   font-size: 2em;
   line-height: 0;
 }
@@ -198,11 +199,6 @@ footer {
 .thats-me-paragraph {
   text-align: justify;
   line-height: 1.7;
-}
-
-.thats-me-paragraph::first-letter {
-  font-size: 2em;
-  line-height: 0;
 }
 
 .check-out-link {
