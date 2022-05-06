@@ -381,10 +381,9 @@ footer {
     line-height: 1.5;
     font-size: 14px;
   }
-  .learn-more {
-    display: none;
-  }
-  .work-link {
+  .learn-more,
+  .work-link,
+  .showcase-text {
     display: none;
   }
   .portrait {
@@ -403,9 +402,6 @@ footer {
   }
   .skill-name {
     font-size: 12px;
-  }
-  .showcase-text {
-    display: none;
   }
   .linkedin,
   .github,
