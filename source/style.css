@@ -95,13 +95,18 @@ footer {
   transform-origin: bottom left;
 }
 
-.hero {
+.hero,
+.hero-about,
+.hero-work {
   background: var(--secondary-color);
+}
+
+.hero {
   padding: 80px 100px 200px 150px;
 }
 
-.hero-about {
-  background: var(--secondary-color);
+.hero-about,
+.hero-work {
   padding: 80px 100px;
 }
 
@@ -109,6 +114,7 @@ footer {
   border-radius: 4px;
   padding: 20px 25px;
   text-decoration: none;
+  transition: var(--transition);
 }
 
 .about-link,
@@ -127,7 +133,6 @@ footer {
 .contact-link {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
-  transition: var(--transition);
 }
 
 .contact-link:hover {
@@ -218,6 +223,34 @@ footer {
   padding-top: 10px;
   font-size: 16px;
   text-align: center;
+}
+
+.pic {
+  width: 500px;
+  height: 300px;
+  border-radius: 4px;
+  background: url("/images/weather-react-light.png");
+  background-size: 100%;
+  transition: var(--transition);
+}
+
+.pic:hover {
+  background: url("/images/weather-react-dark.png");
+  background-size: 100%;
+}
+
+.landing-page {
+  width: 500px;
+  height: 300px;
+  border-radius: 4px;
+  background: url("/images/old-books.png");
+  background-size: 100%;
+  transition: var(--transition);
+}
+
+.landing-page:hover {
+  background: url("/images/table-tennis.png");
+  background-size: 100%;
 }
 
 .connect-row {
