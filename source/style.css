@@ -104,7 +104,8 @@ footer {
 
 .hero,
 .hero-about,
-.hero-work {
+.hero-work,
+.hero-contact {
   background: var(--secondary-color);
 }
 
@@ -113,7 +114,8 @@ footer {
 }
 
 .hero-about,
-.hero-work {
+.hero-work,
+.hero-contact {
   padding: 80px 100px;
 }
 
