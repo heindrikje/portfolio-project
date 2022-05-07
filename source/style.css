@@ -359,7 +359,8 @@ footer {
     font-size: 48px;
   }
   .skill-name,
-  .showcase-link {
+  .showcase-link,
+  .social-name {
     font-size: 14px;
   }
   .showcase-text {
@@ -417,8 +418,9 @@ footer {
   .skill-icon {
     font-size: 38px;
   }
-  .skill-name {
-    font-size: 12px;
+  .skill-name,
+  .social-name {
+    font-size: 11px;
   }
   .submit-button {
     padding: 10px 15px;
