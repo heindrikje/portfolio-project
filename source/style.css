@@ -19,7 +19,7 @@ h1 {
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 46px;
 }
 
 h3 {
@@ -119,22 +119,32 @@ footer {
   padding: 80px 100px;
 }
 
-.navigation-links a {
+.navigation-links a,
+.submit-button {
   border-radius: 4px;
   padding: 20px 25px;
   text-decoration: none;
   transition: var(--transition);
 }
 
+.submit-button {
+  border-radius: 4px;
+  border-color: transparent;
+  padding: 15px 20px;
+  transition: var(--transition);
+}
+
 .about-link,
-.work-link {
+.work-link,
+.submit-button {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: var(--light-color);
 }
 
 .about-link:hover,
-.work-link:hover {
+.work-link:hover,
+.submit-button:hover {
   color: var(--light-color);
   opacity: 0.8;
 }
@@ -266,6 +276,11 @@ footer {
   background-size: 100%;
 }
 
+.form-label {
+  background-color: var(--light-color);
+  color: var(--primary-color);
+}
+
 .connect-row {
   padding: 0 100px;
 }
@@ -308,7 +323,7 @@ footer {
     font-size: 72px;
   }
   h2 {
-    font-size: 36px;
+    font-size: 34px;
   }
   h3 {
     font-size: 18px;
@@ -364,7 +379,7 @@ footer {
     font-size: 48px;
   }
   h2 {
-    font-size: 28px;
+    font-size: 26px;
   }
   h3 {
     font-size: 16px;
@@ -404,6 +419,9 @@ footer {
   }
   .skill-name {
     font-size: 12px;
+  }
+  .submit-button {
+    padding: 10px 15px;
   }
   .linkedin,
   .github,
