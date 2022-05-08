@@ -69,13 +69,19 @@
     </nav>
     <section class="hero-contact">
       <h1>Hello.</h1>
-
       <div class="row">
         <div class="col-md-6">
-          <form class="mt-5">
+          <form
+            class="mt-5 gform"
+            method="POST"
+            data-email="example@email.net"
+            action="https://script.google.com/macros/s/AKfycbxcFtQviA58h5769ifG9wm86jgJI5uypDYFwXcrvpj45d8ILQEUFRtm07oZXDwyizKG/exec"
+          >
             <div class="form-floating mb-3">
               <input
                 type="name"
+                name="name"
+                required
                 class="form-control form-label"
                 id="floatingInput"
                 placeholder="Your Name"
@@ -85,16 +91,19 @@
             <div class="form-floating mb-3">
               <input
                 type="email"
+                name="email"
+                required
                 class="form-control form-label"
                 id="floatingInput"
                 placeholder="name@example.com"
               />
               <label for="floatingInput">Email</label>
             </div>
-
             <div class="form-floating">
               <textarea
                 class="form-control form-label"
+                name="message"
+                required
                 placeholder="Leave your message here"
                 id="floatingTextarea2"
                 style="height: 200px"
@@ -102,6 +111,9 @@
               <label for="floatingTextarea2">Your message</label>
             </div>
             <button type="submit" class="submit-button">Submit</button>
+            <div class="thankyou-message mt-3" style="display: none">
+              Thanks for contacting me. I'll get back to you soon.
+            </div>
           </form>
         </div>
         <div class="col-2"></div>
@@ -140,5 +152,10 @@
       </div>
     </div>
     <footer>© 2022 | Design & Code by Heindrikje (that's me 👋🏼)</footer>
+    <script
+      data-cfasync="false"
+      type="text/javascript"
+      src="/source/form-submission-handler.js"
+    ></script>
   </body>
 </html>
