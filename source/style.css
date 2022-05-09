@@ -79,11 +79,16 @@ p.sub-header {
   line-height: 2;
 }
 
+p.welcome,
+p.thats-me-paragraph,
+p.showcase-text {
+  text-align: justify;
+}
+
 p.welcome {
   margin: 50px auto;
-  padding: 0 60px;
+  padding: 0 100px;
   max-width: 900px;
-  text-align: justify;
 }
 
 p.welcome::first-letter,
@@ -100,13 +105,15 @@ p.check-out-link {
 }
 
 p.welcome a:hover,
-p.check-out-link:hover {
+p.check-out-link:hover,
+a.showcase-link {
   color: var(--highlight-color);
 }
 
 img.portrait {
   max-width: 350px;
   margin-left: 80px;
+  border-radius: 15px;
 }
 
 a.learn-more {
@@ -114,26 +121,17 @@ a.learn-more {
   opacity: 0.8;
 }
 
-a.learn-more:hover {
+a.learn-more:hover,
+a.showcase-link:hover {
   color: var(--primary-color);
 }
 
 p.thats-me-paragraph {
-  text-align: justify;
   line-height: 1.7;
 }
 
 p.showcase-text {
   font-size: 14px;
-  text-align: justify;
-}
-
-a.showcase-link {
-  color: var(--highlight-color);
-}
-
-a.showcase-link:hover {
-  color: var(--primary-color);
 }
 
 i.linkedin,
@@ -251,18 +249,14 @@ footer {
   color: var(--primary-color);
 }
 
-.weather-react-image,
-.landing-page-image {
+.weather-react-image {
+  margin-bottom: 60%;
+  background: url("/images/weather-react-light.png") no-repeat;
   width: 100%;
   height: 100%;
   border-radius: 4px;
   background-size: 100%;
   transition: var(--transition);
-}
-
-.weather-react-image {
-  margin-bottom: 60%;
-  background: url("/images/weather-react-light.png") no-repeat;
 }
 
 .weather-react-image:hover {
@@ -273,6 +267,11 @@ footer {
 .landing-page-image {
   margin-bottom: 110%;
   background: url("/images/table-tennis.png") no-repeat;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background-size: 100%;
+  transition: var(--transition);
 }
 
 .landing-page-image:hover {
@@ -286,17 +285,14 @@ footer {
 }
 
 @media (max-width: 1100px) {
-  .hero {
-    padding: 80px 0 200px 100px;
+  section.hero {
+    padding: 80px 80px 100px 100px;
   }
-  .emoji-heindrikje {
+  img.emoji-heindrikje {
     display: none;
   }
-  .hero-about {
-    padding-left: 80px;
-  }
-  .portrait {
-    width: 330px;
+  img.portrait {
+    width: 300px;
   }
 }
 
@@ -304,39 +300,30 @@ footer {
   h1 {
     font-size: 72px;
   }
-  .hi-header {
-    font-size: 34px;
-  }
   h2.animated-header {
     font-size: 18px;
   }
-
-  .logo-portfolio {
+  img.logo-portfolio {
     width: 130px;
   }
+  p.welcome,
+  p.sub-header,
   .nav-link {
-    font-size: 15px;
+    line-height: 1.7;
+    font-size: 16px;
   }
-  .hero {
-    padding: 80px 0 150px 100px;
+  img.portrait {
+    width: 250px;
+    margin-left: 60px;
+  }
+  p.showcase-text {
+    font-size: 12px;
+  }
+  .hi-header {
+    font-size: 34px;
   }
   .navigation-links a {
     padding: 15px 15px;
-  }
-  .welcome {
-    line-height: 1.7;
-    font-size: 18px;
-    padding: 0 90px;
-  }
-  .hero-about {
-    padding: 80px 50px;
-  }
-  .sub-header {
-    font-size: 16px;
-  }
-  .portrait {
-    width: 250px;
-    margin-left: 60px;
   }
   .skill-icon {
     font-size: 48px;
@@ -345,24 +332,21 @@ footer {
   .showcase-link {
     font-size: 14px;
   }
-  .showcase-text {
-    font-size: 12px;
-  }
 }
 
 @media (max-width: 630px) {
+  section.hero {
+    padding: 60px 30px 100px 30px;
+  }
   h1,
-  .hi-header,
   h2.animated-header,
+  p.sub-header,
   .navigation-links,
-  .sub-header {
+  .hi-header {
     text-align: center;
   }
   h1 {
     font-size: 48px;
-  }
-  .hi-header {
-    font-size: 26px;
   }
   h2.animated-header {
     font-size: 16px;
@@ -371,45 +355,28 @@ footer {
   h4 {
     font-size: 20px;
   }
-  footer {
-    font-size: 11px;
-  }
-  .hero,
-  .hero-about {
-    padding: 60px 30px 100px 30px;
-  }
-  .welcome {
+  p.welcome,
+  p.thats-me-paragraph {
     line-height: 1.5;
     font-size: 14px;
   }
-  .learn-more,
-  .work-link,
-  .showcase-text {
-    display: none;
-  }
-  .portrait {
-    width: 180px;
-    margin-left: 45px;
-  }
-  .about-me-header {
-    font-size: 18px;
-  }
-  .thats-me-paragraph {
-    line-height: 1.5;
-    font-size: 14px;
-  }
-  .skill-icon {
-    font-size: 38px;
-  }
+  footer,
   .skill-name {
     font-size: 11px;
   }
-  .submit-button {
-    padding: 10px 15px;
+  .hi-header {
+    font-size: 26px;
   }
-  .linkedin,
-  .github,
-  .email {
-    font-size: 20px;
+  a.learn-more,
+  p.showcase-text,
+  .work-link {
+    display: none;
+  }
+  img.portrait {
+    width: 180px;
+    margin-left: 45px;
+  }
+  .skill-icon {
+    font-size: 38px;
   }
 }
