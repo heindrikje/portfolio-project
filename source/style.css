@@ -1,6 +1,5 @@
 :root {
   --primary-color: #112d4e;
-  --secondary-color: #d4e1f8;
   --highlight-color: #3f72af;
   --light-color: #f8f9fa;
   --transition: all 150ms ease-in-out;
@@ -12,12 +11,21 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.content {
+  min-height: calc(100vh - 40px);
+}
+
 nav.navbar {
   padding: 3px;
 }
 
 nav img.logo-portfolio {
   width: 160px;
+}
+
+section.hero {
+  background: #d4e1f8;
+  padding: 100px 100px 130px 130px;
 }
 
 h1 {
@@ -68,11 +76,6 @@ h4 {
   font-family: var(--highlight-font);
 }
 
-section.hero {
-  background: var(--secondary-color);
-  padding: 100px 100px 130px 130px;
-}
-
 p.welcome,
 p.sub-header {
   font-size: 20px;
@@ -98,21 +101,21 @@ p.thats-me-paragraph::first-letter {
 }
 
 p.welcome a,
-p.check-out-link {
+a.check-out-link {
   color: var(--primary-color);
   text-decoration: none;
   font-family: var(--highlight-font);
 }
 
 p.welcome a:hover,
-p.check-out-link:hover,
+a.check-out-link:hover,
 a.showcase-link {
   color: var(--highlight-color);
 }
 
 img.portrait {
   max-width: 350px;
-  margin-left: 80px;
+  margin: 20px 0 0 80px;
   border-radius: 15px;
 }
 
@@ -293,6 +296,7 @@ footer {
   }
   img.portrait {
     width: 300px;
+    margin-top: 15px;
   }
 }
 
@@ -374,9 +378,24 @@ footer {
   }
   img.portrait {
     width: 180px;
-    margin-left: 45px;
+    margin: 10px 0 0 45px;
   }
   .skill-icon {
     font-size: 38px;
+  }
+}
+
+@media (max-width: 576px) {
+  h2.animated-header {
+    font-size: 13px;
+    letter-spacing: 0.65px;
+  }
+  p.welcome,
+  p.thats-me-paragraph {
+    text-align: center;
+  }
+  img.portrait {
+    width: 120px;
+    border-radius: 8px;
   }
 }
