@@ -3,7 +3,6 @@
   --secondary-color: #d4e1f8;
   --highlight-color: #3f72af;
   --light-color: #f8f9fa;
-  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   --transition: all 150ms ease-in-out;
   --highlight-font: "Graduate", cursive;
 }
@@ -11,6 +10,14 @@
 body {
   margin: 50px auto 0 auto;
   font-family: "Montserrat", sans-serif;
+}
+
+nav.navbar {
+  padding: 3px;
+}
+
+nav img.logo-portfolio {
+  width: 160px;
 }
 
 h1 {
@@ -47,12 +54,8 @@ h2.animated-header {
   }
 }
 
-.hi-header {
-  font-size: 46px;
-}
-
 h3 {
-  font-size: 28px;
+  font-size: 30px;
   font-family: var(--highlight-font);
   color: var(--primary-color);
   text-align: center;
@@ -65,20 +68,99 @@ h4 {
   font-family: var(--highlight-font);
 }
 
+section.hero {
+  background: var(--secondary-color);
+  padding: 100px 100px 130px 130px;
+}
+
+p.welcome,
+p.sub-header {
+  font-size: 20px;
+  line-height: 2;
+}
+
+p.welcome {
+  margin: 50px auto;
+  padding: 0 60px;
+  max-width: 900px;
+  text-align: justify;
+}
+
+p.welcome::first-letter,
+p.thats-me-paragraph::first-letter {
+  font-size: 2em;
+  line-height: 0;
+}
+
+p.welcome a,
+p.check-out-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-family: var(--highlight-font);
+}
+
+p.welcome a:hover,
+p.check-out-link:hover {
+  color: var(--highlight-color);
+}
+
+img.portrait {
+  max-width: 350px;
+  margin-left: 80px;
+}
+
+a.learn-more {
+  color: black;
+  opacity: 0.8;
+}
+
+a.learn-more:hover {
+  color: var(--primary-color);
+}
+
+p.thats-me-paragraph {
+  text-align: justify;
+  line-height: 1.7;
+}
+
+p.showcase-text {
+  font-size: 14px;
+  text-align: justify;
+}
+
+a.showcase-link {
+  color: var(--highlight-color);
+}
+
+a.showcase-link:hover {
+  color: var(--primary-color);
+}
+
+i.linkedin,
+i.github,
+i.email {
+  font-size: 18px;
+  color: var(--highlight-color);
+  background: var(--light-color);
+  padding: 10px 11px;
+  margin: 0 10px;
+  border-radius: 50%;
+  transition: var(--transition);
+}
+
+i.linkedin:hover,
+i.github:hover,
+i.email:hover {
+  color: var(--light-color);
+  background: var(--highlight-color);
+}
+
 footer {
   font-size: 13px;
   text-align: center;
   margin-top: 30px;
   background: var(--light-color);
   padding: 10px;
-}
-
-.navbar {
-  padding: 3px;
-}
-
-.logo-portfolio {
-  width: 160px;
 }
 
 .nav-link {
@@ -107,44 +189,32 @@ footer {
   transform-origin: bottom left;
 }
 
-.hero,
-.hero-about,
-.hero-work,
-.hero-contact {
-  background: var(--secondary-color);
-}
-
-.hero {
-  padding: 80px 100px 200px 150px;
-}
-
-.hero-about,
-.hero-work,
-.hero-contact {
-  padding: 80px 100px;
+.hi-header {
+  font-size: 46px;
 }
 
 .navigation-links a,
 .submit-button {
   border-radius: 4px;
-  padding: 20px 25px;
-  text-decoration: none;
   transition: var(--transition);
 }
 
-.submit-button {
-  border-radius: 4px;
-  border-color: transparent;
-  padding: 15px 20px;
-  transition: var(--transition);
+.navigation-links a {
+  padding: 20px 25px;
+  text-decoration: none;
 }
 
 .about-link,
 .work-link,
 .submit-button {
   background: var(--primary-color);
-  box-shadow: var(--box-shadow);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   color: var(--light-color);
+}
+
+.submit-button {
+  border-color: transparent;
+  padding: 10px 15px;
 }
 
 .about-link:hover,
@@ -165,66 +235,8 @@ footer {
   background: #e1e6f1;
 }
 
-.welcome {
-  margin: 50px auto;
-  padding: 0 60px;
-  max-width: 900px;
-  text-align: justify;
-  font-size: 20px;
-  line-height: 2;
-}
-
-.welcome::first-letter,
-.thats-me-paragraph::first-letter {
-  font-size: 2em;
-  line-height: 0;
-}
-
-.welcome a {
-  color: var(--primary-color);
-  text-decoration: none;
-  font-family: var(--highlight-font);
-}
-
-.welcome a:hover {
-  text-decoration: underline;
-}
-
-.sub-header {
-  font-size: 20px;
-  line-height: 2;
-}
-
-.portrait {
-  max-width: 400px;
-  margin-left: 80px;
-}
-
-.learn-more {
-  color: black;
-  opacity: 0.8;
-}
-
-.learn-more:hover {
-  color: var(--primary-color);
-}
-
 #thats-me {
   scroll-margin-top: 90px;
-}
-
-.thats-me-paragraph {
-  text-align: justify;
-  line-height: 1.7;
-}
-
-.check-out-link {
-  text-decoration: none;
-  color: black;
-}
-
-.check-out-link:hover {
-  color: var(--highlight-color);
 }
 
 .skill-icon {
@@ -239,27 +251,18 @@ footer {
   color: var(--primary-color);
 }
 
-.showcase-text {
-  font-size: 14px;
-  text-align: justify;
-}
-
-.showcase-link {
-  color: var(--highlight-color);
-}
-
-.showcase-link:hover {
-  color: var(--primary-color);
+.weather-react-image,
+.landing-page-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background-size: 100%;
+  transition: var(--transition);
 }
 
 .weather-react-image {
   margin-bottom: 60%;
-  width: 100%;
-  height: 100%;
-  border-radius: 4px;
   background: url("/images/weather-react-light.png") no-repeat;
-  background-size: 100%;
-  transition: var(--transition);
 }
 
 .weather-react-image:hover {
@@ -269,12 +272,7 @@ footer {
 
 .landing-page-image {
   margin-bottom: 110%;
-  width: 100%;
-  height: 100%;
-  border-radius: 4px;
   background: url("/images/table-tennis.png") no-repeat;
-  background-size: 100%;
-  transition: var(--transition);
 }
 
 .landing-page-image:hover {
@@ -285,30 +283,6 @@ footer {
 .form-label {
   background-color: var(--light-color);
   color: var(--primary-color);
-}
-
-.connect-row a {
-  text-decoration: none;
-  color: var(--primary-color);
-}
-
-.linkedin,
-.github,
-.email {
-  font-size: 18px;
-  color: var(--highlight-color);
-  background: var(--light-color);
-  padding: 10px 11px;
-  margin: 0 10px;
-  border-radius: 50%;
-  transition: var(--transition);
-}
-
-.linkedin:hover,
-.github:hover,
-.email:hover {
-  color: var(--light-color);
-  background: var(--highlight-color);
 }
 
 @media (max-width: 1100px) {
