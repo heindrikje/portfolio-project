@@ -213,6 +213,10 @@ footer {
   color: var(--light-color);
 }
 
+.work-link {
+  margin-right: 12px;
+}
+
 .submit-button {
   border-color: transparent;
   padding: 10px 15px;
@@ -317,8 +321,8 @@ footer {
     font-size: 16px;
   }
   img.portrait {
-    width: 250px;
-    margin-left: 60px;
+    width: 200px;
+    margin-left: 50px;
   }
   p.showcase-text {
     font-size: 12px;
@@ -329,6 +333,9 @@ footer {
   .navigation-links a {
     padding: 15px 15px;
   }
+  .work-link {
+    margin-right: 8px;
+  }
   .skill-icon {
     font-size: 48px;
   }
@@ -338,7 +345,7 @@ footer {
   }
 }
 
-@media (max-width: 630px) {
+@media (max-width: 640px) {
   section.hero {
     padding: 60px 30px 100px 30px;
   }
@@ -377,7 +384,7 @@ footer {
     display: none;
   }
   img.portrait {
-    width: 180px;
+    width: 170px;
     margin: 10px 0 0 45px;
   }
   .skill-icon {
