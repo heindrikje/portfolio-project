@@ -311,7 +311,7 @@ footer {
   h2.animated-header {
     font-size: 18px;
   }
-  img.logo-portfolio {
+  nav img.logo-portfolio {
     width: 130px;
   }
   p.welcome,
@@ -393,6 +393,9 @@ footer {
 }
 
 @media (max-width: 576px) {
+  nav img.logo-portfolio {
+    width: 100px;
+  }
   h2.animated-header {
     font-size: 13px;
     letter-spacing: 0.65px;
@@ -401,8 +404,27 @@ footer {
   p.thats-me-paragraph {
     text-align: center;
   }
+  p.welcome {
+    padding: 0 50px;
+  }
   img.portrait {
     width: 120px;
     border-radius: 8px;
+  }
+}
+
+@media (max-width: 380px) {
+  section.hero {
+    padding: 60px 5px 80px 5px;
+  }
+  h1 {
+    font-size: 38px;
+  }
+  h2.animated-header {
+    font-size: 10.5px;
+  }
+  .navigation-links a {
+    padding: 10px 10px;
+    font-size: 12px;
   }
 }
